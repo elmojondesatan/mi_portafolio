@@ -1,0 +1,103 @@
+/* Fuente con vibra retro (puedes usar otra que te guste en Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+:root {
+  --bg: #111;
+  --text: #f4f4f4;
+  --accent: #ff914d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  background-color: #111;
+  color: var(--text);
+}
+
+
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+/* Botón estilo retro */
+.proyecto-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    padding: 1rem 2rem;        /* más grandes */
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--accent);
+    font-size: 1.1rem;         /* letra más grande */
+    letter-spacing: 1px;       /* da estilo más “streetwear” */
+  }
+  
+  .proyecto-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+    transform: scale(1.05);    /* efecto de crecer */
+  }
+  
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17,17,17,0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #222;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+}
